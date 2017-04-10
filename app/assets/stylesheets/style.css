@@ -1,0 +1,120 @@
+@charset "UTF-8";
+html{
+  font-size: 62.5% ;
+}
+*, *::before,*::after{
+  box-sizing: border-box;
+}
+body{
+  /*background: url("background3.png") repeat 0 0;*/
+  /*background-size: cover;*/
+  background: #f7f6f4;
+  color: #635d5d;
+  text-align: center;
+  font-size: 1.4rem;
+  margin: 0 auto;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+li{list-style: none;}
+
+.wrapper{
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+
+/*Bootstrap上書き系*/
+.button-index{
+  border-radius: 0;
+}
+
+.button-index a {
+  color: #FFF;
+}
+.navbar-fixed-top-index{
+  position: ;
+  top: 0;
+  border-width: 0 0 1px;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+.content{
+  line-height: 2.5rem;
+}
+
+//padding
+.pd-lr{padding-left: 20px;padding-right: 20px;}
+.pd-tb{padding-top: 20px;padding-bottom: 20px;}
+.pd-t{padding-top: 30px;}
+.pd-b{padding-bottom: 30px;}
+.pd-tb-50{padding: 50px 0;}
+.pd-lr-50{padding: 0px 50px;}
+
+// border
+.border-box{
+  border: solid 2px #757575 ;
+}
+.border-bottom{border-bottom:solid 1px  #757575}
+.border-box-double{border: double 5px #757575;}
+.border-box-bottom{
+  border-bottom: solid 2px  #BDBDBD;
+  width: 20%;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+.border-jp{
+  border: 4px solid #82636b;
+  border-radius: 240px 15px 185px 15px / 15px 200px 15px 185px;
+  margin: 2em;
+  padding: 2em;
+}
+.border-jp-white{
+  border: 4px solid #FFF;
+  border-radius: 240px 15px 185px 15px / 15px 200px 15px 185px;
+  margin: 2em;
+  padding: 2em;
+}
+.border-brawn{
+  border: 5px double #82636b;
+}
+
+.icon{
+  width: 13%;
+  margin: 0 auto;
+}
+
+
+
+
+
+//フッター
+.footer{
+  // color: #fff;
+  width: 100%;
+  padding-bottom: 30px;
+}
+.footer-item{
+  padding: 10px;
+}
+
+.sublist{
+  margin-bottom: 30px;
+  list-style: none;
+}
+
+.sublist ul{
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.sublist li {
+  padding: 0 10px;
+  border-right: 1px solid black;
+}

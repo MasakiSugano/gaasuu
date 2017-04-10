@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="contetnt form-group">
+    <%= form_tag('/contents', method: :post) do %>
+      <h3>投稿する</h3>
+      <div class="col-xs-6">
+        <p class="text-left title">タイトルを記入</p>
+        <input class="form-control" placeholder="タイトル" type="text" name="title">
+      </div>
+      <div class="col-xs-6">
+        <p class="text-left title">日付を記入</p>
+        <input class="form-control" placeholder="日付" type="text" name="date">
+      </div>
+      <div class="col-xs-12">
+        <p class="text-left title">記事を記入</p>
+        <textarea name="text" class="form-control" placeholder="テキストを入力" rows="5" style=""></textarea>
+      </div>
+      <div class="col-xs-12">
+        <p class="text-left title">画像を挿入</p>
+        <input type="file" id="exampleInputFile" name="image">
+      </div>
+      <button type="submit" value="SENT" class="btn btn-default">Submit</button>
+    <% end %>
+  </div>
+</div>

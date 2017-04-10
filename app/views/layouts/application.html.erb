@@ -1,14 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>SuganoCoffee</title>
+
+  <title>珈琲工房すがの 駿府公園すぐちかく</title>
+  <meta name="keywords" content="珈琲工房すがの,すがの,静岡,駿府公園,カフェ,喫茶,コーヒー,珈琲屋,ランチ">
+  <meta name="description" content="珈琲工房すがのの公式ホームページです。自家焙煎にこだわったオリジナルのブレンドーコーヒーでお客様のくつろぎのパートナーを目指します。" >
+  <meta property="og:site_name" content="珈琲工房すがの">
+  <meta property="og:title" content="珈琲工房すがの">
+  <meta property="og:type" content="website">
+  <meta property="og:description" content="珈琲工房すがのの公式ホームページです。自家焙煎にこだわったオリジナルのブレンドーコーヒーでお客様のくつろぎのパートナーを目指します。">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+
+<!--stylesheet-->
+
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <link rel="shortcut icon" href="assets/beans_logo.ico">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="https://fonts.googleapis.com/earlyaccess/hannari.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/earlyaccess/sawarabimincho.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet" />
+
 </head>
 <body>
-
-<%= yield %>
-
+  <%= render 'layouts/header' %>
+  <%= yield %>
+  <%= render 'layouts/footer' %>
 </body>
 </html>
