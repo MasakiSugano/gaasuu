@@ -6,7 +6,7 @@ $(function(){
       slidesToShow: 1,
       slideToScroll:1,
       autoplay: true,
-      autoplayspeed: 5000,
+      autoplayspeed: 1000,
       fade: true,
     });
 
@@ -15,7 +15,7 @@ $(function(){
       slidesToShow: 1,
       slideToScroll:1,
       autoplay: true,
-      autoplayspeed: 3000,
+      autoplayspeed: 6000,
       cssEase: 'linear',
       fade: true,
     });
