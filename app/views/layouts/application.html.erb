@@ -23,8 +23,12 @@
 
 </head>
 <body>
-  <%= render 'layouts/header' %>
-  <%= yield %>
+  <section class="p-superwrapper">
+    <section class="p-supercontainer">
+      <%= render 'layouts/header' %>
+      <%= yield %>
+    </section>
+  </section>
   <%= render 'layouts/footer' %>
 </body>
 </html>

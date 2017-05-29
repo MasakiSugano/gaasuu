@@ -1,38 +1,46 @@
 <section class="top">
   <div class="">
-    <%= image_tag("shop_taru_garrery.jpg",:alt=>"メニュー" ,:class=> "" ,:style => "height:500px;object-fit:cover;width:100%;")%>
+    <%= image_tag("shop_taru_garrery.jpg",:alt=>"メニュー" ,:class=> "himage" )%>
   </div>
 </header>
+</section>
 
-<section class="beans">
-  <div class="subNav">
-    <div class="container">
-      <div class="row sublist pd-tb">
-        <div class="box col-xs-12 border-bottom  pd-lr">
-          <ul class="">
-            <li class=""><a class="primary-text-color" href="">ブレンド豆</a></li>
-            <li class=""><a class="primary-text-color" href="">スタンダード豆</a></li>
-            <li class=""><a class="primary-text-color" href="">プレミアム珈琲豆</a></li>
-            <li class=""><a class="primary-text-color" href="">農園指定珈琲豆</a></li>
-          </ul>
-        </div>
-      </div>
+<div id="" class="subNav" style="border-bottom:1px solid #d9d9d7;">
+    <ul class="">
+      <li class=""><a class="primary-text-color" href="">ブレンド豆</a></li>
+      <li class=""><a class="primary-text-color" href="">スタンダード豆</a></li>
+      <li class=""><a class="primary-text-color" href="">プレミアム珈琲豆</a></li>
+      <li class=""><a class="primary-text-color" href="">農園指定珈琲豆</a></li>
+    </ul>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class=" col-sm-5">
+      <img class="img-rounded img-responsive" src="assets/drip_1.jpg" alt="" style="padding:12px">
     </div>
-  </div>
-  <div class="container pd-tb pd-lr">
-    <div class="row">
-      <%= image_tag("shop_taru_garrery.jpg",:alt=>"メニュー" ,:class=> "" ,:style => "height:300px;object-fit:cover;width:100%;")%>
-      <h1 class="primary-text-color wf-hannari text-left pd-tb">まめリスト</h1>
-      <p class="text-left secondary-text secondary-text-color font-weght-300">
-        珈琲工房すがのでは自家焙煎の珈琲豆を販売しております。<br>
-        お気に入りの珈琲を探したり、その日の気分にあった珈琲を探すのも楽しみの一つです。
+    <div class="box text-left col-sm-5">
+      <h4>珈琲豆リスト</h4>
+      <p>
+        お店では珈琲豆の販売も行なっております。<br>
+        苦味、酸味や香りなどの中からお客様が重視していることを伺い、おすすめの商品を選びます。 <br>
+        <small>*袋を開けたら密閉容器に淹れて保存してください。 <br>
+          新鮮なコーヒー豆は活きています。焙煎後、挽いた後も炭酸ガスを発生し続けておりますので、常温で10日間くらいで飲みきる量のご購入をおすすめします。 <br></small>
+        <small>*長期保存の場合 <br>
+        袋のまま密閉容器に入れ、冷凍庫に保存してください。2ヶ月が目安です。</small>
       </p>
     </div>
+  </div>
+</div>
+
+<section class="beans">
+  <div class="container pd-tb pd-lr">
+      <h1 class="primary-text-color wf-hannari text-left pd-tb">まめリスト</h1>
   </div>
 </section>
 
 
-<section class="beans-list">
+<section id="originalblend" class="beans-list">
   <div class="container">
     <div class="row">
       <div class="col-xs-12 col-sm-12">
@@ -40,7 +48,7 @@
       <table class="table">
         <thead>
            <tr>
-             <th class="text-center">ブレンド名</th>
+             <th class="text-center">名前</th>
              <th class="text-center" colspan="2">詳細</th>
              <th class="text-center hidden-xs" >香り</th>
              <th class="text-center hidden-xs">酸味</th>
@@ -56,7 +64,7 @@
         </tbody>
       </table>
       </div>
-      <div class="col-xs-12 col-sm-12">
+      <div id="blend" class="col-xs-12 col-sm-12 wrapper">
       <h4 class="text-left">ブレンド珈琲豆</h4>
       <table class="table">
         <thead>
@@ -79,7 +87,7 @@
         </tbody>
       </table>
       </div>
-      <div class="col-xs-12 col-sm-12 wrapper">
+      <div id="standard" class="col-xs-12 col-sm-12 wrapper">
         <h4 class="text-left">スタンダード珈琲豆</h4>
         <table class="table">
           <thead>
@@ -99,7 +107,7 @@
           </tbody>
         </table>
       </div>
-      <div class="col-xs-12 col-sm-12">
+      <div id="cafeineless" class="col-xs-12 col-sm-12">
       <h4 class="text-left">カフェインレス珈琲豆</h4>
       <table class="table">
         <thead>
@@ -112,7 +120,7 @@
         </tbody>
       </table>
       </div>
-      <div class="col-xs-12 col-sm-12 wrapper">
+      <div id="premium" class="col-xs-12 col-sm-12 wrapper">
         <h4 class="text-left">プレミアム珈琲豆</h4>
         <table class="table">
           <thead>
@@ -127,7 +135,7 @@
           </tbody>
         </table>
       </div>
-      <div class="col-xs-12 col-sm-12 wrapper">
+      <div  id="" class="col-xs-12 col-sm-12 wrapper">
         <h4 class="text-left">農園指定の珈琲豆</h4>
         <table class="table">
           <thead>
@@ -140,7 +148,7 @@
         </table>
       </div>
 
-      <div class="col-xs-12 col-sm-12">
+      <div id="organic" class="col-xs-12 col-sm-12">
         <h4 class="text-left">有機栽培珈琲豆</h4>
         <p class="text-left">自然にやさしく、体に優しい、生産者の心のこもった生豆です。<br>有機栽培のコーヒー豆は、化学肥料・農薬を使用せず、三年以上完熟した堆肥等で土作りを行って栽培しています。</p>
         <table class="table">
@@ -154,15 +162,6 @@
           </tbody>
         </table>
       </div>
-    </div>
-  </div>
-</section>
-
-
-<section class="sales-link">
-  <div class="container wrapper">
-    <div class="row">
-      <button type="button" class="btn btn-group-lg accent-color text-primary-color" ><a class="text-primary-color" href="http://localhost:3000/contents/sales">珈琲豆のご購入方法はこちら</a></button>
     </div>
   </div>
 </section>

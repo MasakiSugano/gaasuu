@@ -11,5 +11,7 @@ Rails.application.routes.draw do
   get '/sales'=>'contents#sales'
   get '/display'=>'contents#display'
   get '/privacy'=>'contents#privacy'
+  get '/access'=>'contents#access'
   post  'contents'    =>  'contents#create'
+
 end
